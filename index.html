@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <!-- connection -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- app -->
+    <div class="main_div">
+        <div class="music_container">
+
+
+            <!-- connection -->
+            <div class="toast" style="position: absolute; top: 25px; right: 25px;">
+                <div class="toast-header">
+                    <i class="bi bi-wifi"></i>&nbsp;&nbsp;&nbsp;
+                    <strong class="mr-auto"><span class="text-success">You're online now</span></strong>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="toast-body">
+                    Hurray! Internet is connected.
+                </div>
+            </div>
+
+            <h2 id="title">FAV SONG OF</h2>
+            <h3 id="artist">Kalongba</h3>
+
+
+
+            <div class="img_container">
+                <img src="img/Have You Ever Seen The Rain - Creedence Clearwater Revival.jpg" alt="">
+            </div>
+            <audio src="music/Have You Ever Seen The Rain - Creedence Clearwater Revival.mp3"></audio>
+
+            <!-- progress bar -->
+            <div class="progressbar_container" id="progress_container">
+                <div class="progress_duration_meter">
+                    <div id="current_time">
+                        0:00
+                    </div>
+                    <div id="duration">
+                        2:44
+                    </div>
+                </div>
+                <div class="progress_div" id="progress_div">
+                    <div class="progress_black" id="progress">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- controls -->
+            <div class="music_controls">
+                <li class="fas fa-backward" id="prev" title="Previous"></li>
+                <li class="fas fa-play main_button" id="play" title="Play"></li>
+                <li class="fas fa-forward" id="next" title="Next"></li>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="anotherScript.js"></script>
+</body>
+
+</html>
